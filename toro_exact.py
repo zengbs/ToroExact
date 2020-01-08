@@ -163,7 +163,7 @@ if(__name__ == '__main__'):
 			file.write('# Left  state [dens,velx,pres]: [{:<.5e}, {:.5e}, {:.5e}]\n'.format(stateL[0],stateL[1],stateL[2]))
 			file.write('# Right state [dens,velx,pres]: [{:<.5e}, {:.5e}, {:.5e}]\n'.format(stateR[0],stateR[1],stateR[2]))
 			file.write('# Time: {:.5e}\n'.format(t))
-			file.write('{:>17} {:>17} {:>17} {:>17} {:>17} {:>17}\n'.format('x','dens','pres','velx','eint','cspd'))
+			file.write('#{:>17} {:>17} {:>17} {:>17} {:>17} {:>17}\n'.format('x','dens','pres','velx','eint','cspd'))
 			for i in range(0,npts):
 				file.write('{:17.9e} {:17.9e} {:17.9e} {:17.9e} {:17.9e} {:17.9e}\n'.format(x[i],dens[i],pres[i],velx[i],eint[i],cspd[i]))
 
